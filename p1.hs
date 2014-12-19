@@ -1,5 +1,3 @@
-sx a b = sum[x | x<-[a..b], x `mod` 3 == 0, x `mod` 5 == 0]  
-a = 1
-b = 1000
-foo = print $ sx a b
+sum_of_multiplies ll ul = sum[x | x<-[ll..ul], x `mod` 3 == 0  || x `mod` 5 == 0]  
+foo = print $ sum_of_multiplies 1 999
 main = foo
