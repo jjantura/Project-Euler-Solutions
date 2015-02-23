@@ -1,4 +1,3 @@
--- nice but ineffective, problems with stack
 fib :: [Int]
 fib = 0 : 1 : zipWith (+) fib (tail fib)
 
