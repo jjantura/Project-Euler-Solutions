@@ -1,0 +1,4 @@
+# ignore intermediate files
+*.hi
+# ignore object files
+*.o
