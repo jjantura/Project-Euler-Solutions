@@ -1,6 +1,7 @@
 module Main where
 
-import Lib
+import P001
 
 main :: IO ()
-main = someFunc
+main = do
+    putStrLn $ show $ p001 1 999 
