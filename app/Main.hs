@@ -4,4 +4,4 @@ import P001
 
 main :: IO ()
 main = do
-    putStrLn $ show $ p001 1 999 
+    putStrLn $ "P001: " ++ p001_solution 
