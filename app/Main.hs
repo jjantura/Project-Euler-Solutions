@@ -7,6 +7,7 @@ import P004
 import P005
 import P006
 import P007
+import P008
 import P009
 
 main :: IO ()
