@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 5633fd5a35ca247972ecec1f584672ca4983bb1c697e641a2254dd27536863c7
+-- hash: dc99802b44a3f7d00adfea22838d2de4dfec289357c64163b9077a70e2f5b6fd
 
 name:           Project-Euler-Solutions
 version:        0.1.0.0
@@ -32,12 +32,15 @@ library
       base >=4.7 && <5
   exposed-modules:
       Lib
+      Math
       P001
       P002
       P003
       P004
       P005
+      P006
       P009
+      P122
   other-modules:
       Paths_Project_Euler_Solutions
   default-language: Haskell2010

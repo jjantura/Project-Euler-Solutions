@@ -3,8 +3,9 @@ module Main where
 import P001
 import P002
 import P003
-import P004
+import P004 
 import P005
+import P006
 import P009
 
 main :: IO ()
@@ -13,5 +14,6 @@ main = do
     putStrLn $ "P002: " ++ p002_solution 
     putStrLn $ "P003: " ++ p003_solution 
     putStrLn $ "P004: " ++ p004_solution
-    putStrLn $ "P005: " ++ p005_solution     
+--    putStrLn $ "P005: " ++ p005_solution -- TODO: should be optimized
+    putStrLn $ "P006: " ++ p006_solution
     putStrLn $ "P009: " ++ p009_solution
