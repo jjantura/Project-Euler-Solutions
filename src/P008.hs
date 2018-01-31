@@ -1,6 +1,8 @@
 module P008 (
-
+    get_subset,
+    get_subsets
 ) where 
+
 
 long_number :: Integer
 long_number = read "73167176531330624919225119674426574742355349194934\
@@ -24,6 +26,17 @@ long_number = read "73167176531330624919225119674426574742355349194934\
 \05886116467109405077541002256983155200055935729725\
 \71636269561882670428252483600823257530420752963450" :: Integer
 
+get_subset :: [Integer] -> Int -> Int -> [Integer]
+get_subset xs o s = take s $ drop o xs
+
+get_subsets :: [Integer] -> Int -> [[Integer]]
+get_subsets xs n = foldl(\a e -> (get_subset xs e n):a) ([[]]::[[Integer]]) [0..(length xs - n)]
+
+--largest_product :: [Integer] -> Integer
+--largest_product n = foldl (\a e -> ) 0 digits 
+--   where
+--       digits = number_to_digits n
+--       len = length n
 
 p008_solution :: String
 p008_solution = undefined
