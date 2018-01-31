@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a28983d6475d6131ebfe332147456b930db4dced6feaac0b77d57e8ff4f844c5
+-- hash: 36fd7ba3ace3062d19697709e4ae2880bc15458bd42dfdf9dab82a82785056d3
 
 name:           Project-Euler-Solutions
 version:        0.1.0.0
@@ -30,6 +30,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , primes
   exposed-modules:
       Lib
       Math
@@ -42,6 +43,7 @@ library
       P007
       P008
       P009
+      P010
       P122
   other-modules:
       Paths_Project_Euler_Solutions
@@ -55,6 +57,7 @@ executable Project-Euler-Solutions-exe
   build-depends:
       Project-Euler-Solutions
     , base >=4.7 && <5
+    , primes
   other-modules:
       Paths_Project_Euler_Solutions
   default-language: Haskell2010
@@ -68,6 +71,7 @@ test-suite Project-Euler-Solutions-test
   build-depends:
       Project-Euler-Solutions
     , base >=4.7 && <5
+    , primes
   other-modules:
       Paths_Project_Euler_Solutions
   default-language: Haskell2010
