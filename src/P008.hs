@@ -1,8 +1,12 @@
 module P008 (
     get_subset,
-    get_subsets
+    get_subsets,
+    largest_product,
+    p008_solution,
+    long_number
 ) where 
 
+import Math
 
 long_number :: Integer
 long_number = read "73167176531330624919225119674426574742355349194934\
@@ -32,11 +36,12 @@ get_subset xs o s = take s $ drop o xs
 get_subsets :: [Integer] -> Int -> [[Integer]]
 get_subsets xs n = foldl(\a e -> (get_subset xs e n):a) ([[]]::[[Integer]]) [0..(length xs - n)]
 
---largest_product :: [Integer] -> Integer
---largest_product n = foldl (\a e -> ) 0 digits 
---   where
---       digits = number_to_digits n
---       len = length n
+largest_product :: Integer -> Int -> Integer
+largest_product n l = maximum $ map product subsets 
+   where
+       digits = number_to_digits n
+       subsets = get_subsets digits l
+       
 
 p008_solution :: String
-p008_solution = undefined
+p008_solution = show $ largest_product long_number 13
