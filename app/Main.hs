@@ -17,7 +17,7 @@ main = do
     putStrLn $ "P002: " ++ p002_solution 
     putStrLn $ "P003: " ++ p003_solution 
     putStrLn $ "P004: " ++ p004_solution
---    putStrLn $ "P005: " ++ p005_solution -- TODO: should be optimized
+    putStrLn $ "P005: " ++ p005_solution -- TODO: should be optimized
     putStrLn $ "P006: " ++ p006_solution
     putStrLn $ "P007: " ++ p007_solution
     putStrLn $ "P008: " ++ p008_solution
