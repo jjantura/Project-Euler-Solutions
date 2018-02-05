@@ -5,8 +5,6 @@ module P005 (
 
 import Data.List
 
---divisible_by_range :: Int -> Int -> Int -> Bool
---divisible_by_range ll ul n = foldl' (\a e -> if n `mod`e  == 0 then True && a else False ) True [ul, ul-1..ll]
 divisible_by_range :: Int -> Int -> Bool
 divisible_by_range ul n | ul == 1 = True | otherwise = if n `mod` ul == 0 then divisible_by_range (ul - 1) n else False 
 
