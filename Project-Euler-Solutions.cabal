@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 30cb0c8341ed703eac730b3a774aa2612bbf2debf4fba7b74253167ea50b16fc
+-- hash: 10fba4181123714091d5bfaacb2c061ff09073746a6d40a01d031857e4075740
 
 name:           Project-Euler-Solutions
 version:        0.1.0.0
@@ -46,6 +46,7 @@ library
       P010
       P011
       P016
+      P020
       P122
   other-modules:
       Paths_Project_Euler_Solutions
