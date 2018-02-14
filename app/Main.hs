@@ -19,6 +19,8 @@ import P048
 
 import P116
 
+import P148
+
 main :: IO ()
 main = do
     putStrLn $ "P001: " ++ p001_solution 
@@ -40,3 +42,4 @@ main = do
 
     putStrLn $ "P116: " ++ p116_solution
     
+    putStrLn $ "P148: " ++ p148_solution
