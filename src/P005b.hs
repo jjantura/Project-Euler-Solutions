@@ -1,4 +1,4 @@
-module P005B (
+module P005b (
     p005_solution
 ) where
 
