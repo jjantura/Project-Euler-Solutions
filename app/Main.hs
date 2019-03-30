@@ -21,7 +21,7 @@ import P116
 
 import P148
 
-import P211
+-- import P211
 
 main :: IO ()
 main = do
@@ -46,4 +46,4 @@ main = do
     
     putStrLn $ "P148: " ++ p148_solution
 
-    putStrLn $ "P211: " ++ p211_solution
+--    putStrLn $ "P211: " ++ p211_solution
